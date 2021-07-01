@@ -16,40 +16,40 @@ class _OrderDeliverState extends State<OrderDeliver> {
         child: Column(
           children: [
             TopBar(),
-            Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  Container(
-                      padding: EdgeInsets.only(top: 60, bottom: 30),
-                      child: Text(
-                        "Order Delivered",
-                        style: TextStyle(
-                            fontSize: 27, fontWeight: FontWeight.w600),
-                        textAlign: TextAlign.center,
-                      )),
-                  Container(
-                      padding: EdgeInsets.only(bottom: 10),
-                      child: Icon(
-                        Icons.check_circle,
-                        color: Color(0xFF26B760),
-                        size: 200,
-                      )),
-                  Container(
-                      padding: EdgeInsets.only(bottom: 50),
-                      child: Text(
-                        "Good Job!\nAnother happy customer. Yay!",
-                        style: TextStyle(fontSize: 18),
-                        textAlign: TextAlign.center,
-                      )),
-                  Container(
-                      child: Text(
-                    "Earned \u{20B9}50",
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
-                    textAlign: TextAlign.center,
-                  )),
-                ],
-              ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                Container(
+                    padding: EdgeInsets.only(top: 60, bottom: 30),
+                    child: Text(
+                      "Order Delivered",
+                      style:
+                          TextStyle(fontSize: 27, fontWeight: FontWeight.w600),
+                      textAlign: TextAlign.center,
+                    )),
+                Container(
+                    padding: EdgeInsets.only(bottom: 10),
+                    child: Icon(
+                      Icons.check_circle,
+                      color: Color(0xFF26B760),
+                      size: 200,
+                    )),
+                Container(
+                    padding: EdgeInsets.only(bottom: 50),
+                    child: Text(
+                      "Good Job!\nAnother happy customer. Yay!",
+                      style: TextStyle(fontSize: 18),
+                      textAlign: TextAlign.center,
+                    )),
+                Container(
+                    padding: EdgeInsets.only(bottom: 10),
+                    child: Text(
+                      "Earned \u{20B9}50",
+                      style:
+                          TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                      textAlign: TextAlign.center,
+                    )),
+              ],
             ),
           ],
         ),

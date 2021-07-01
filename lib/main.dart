@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:rider_app/order_deliver.dart';
 import 'package:rider_app/rider_home.dart';
+import 'package:rider_app/profile.dart';
 
 void main() {
   runApp(MyApp());
@@ -93,9 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             RiderHome(),
             OrderDeliver(),
-            Container(
-              color: Colors.green,
-            ),
+            Profile(),
             Container(
               color: Colors.blue,
             ),
