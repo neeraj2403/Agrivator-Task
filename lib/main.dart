@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:rider_app/order_deliver.dart';
+import 'package:rider_app/order_notify.dart';
 import 'package:rider_app/rider_home.dart';
 import 'package:rider_app/profile.dart';
 import 'package:rider_app/to_store.dart';
