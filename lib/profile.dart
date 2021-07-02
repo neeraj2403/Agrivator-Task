@@ -11,47 +11,49 @@ class _ProfileState extends State<Profile> {
   @override
   text(String s) {
     return (Container(
-      decoration: new BoxDecoration(boxShadow: [
-        // new BoxShadow(
-        //   color: Color.fromRGBO(255, 255, 255, 0.06),
-        //   offset: const Offset(
-        //     2.0,
-        //     8.0,
-        //   ),
-        //   blurRadius: 60,
-        // ),
-        new BoxShadow(
-          color: Color.fromRGBO(46, 185, 102, 0.12),
-          offset: const Offset(
-            -2.0,
-            -2.0,
+        decoration: new BoxDecoration(boxShadow: [
+          // new BoxShadow(
+          //   color: Color.fromRGBO(255, 255, 255, 0.06),
+          //   offset: const Offset(
+          //     2.0,
+          //     8.0,
+          //   ),
+          //   blurRadius: 60,
+          // ),
+          new BoxShadow(
+            color: Color.fromRGBO(46, 185, 102, 0.12),
+            offset: const Offset(
+              -2.0,
+              -2.0,
+            ),
+            blurRadius: 5,
           ),
-          blurRadius: 5,
-        ),
-        new BoxShadow(
-          color: Color.fromRGBO(46, 185, 102, 0.12),
-          offset: const Offset(
-            4.0,
-            4.0,
-          ),
-          blurRadius: 5,
-        )
-      ]),
-      child: SizedBox(
-          width: 370,
-          height: 55,
+          new BoxShadow(
+            color: Color.fromRGBO(46, 185, 102, 0.12),
+            offset: const Offset(
+              4.0,
+              4.0,
+            ),
+            blurRadius: 5,
+          )
+        ]),
+        child: SizedBox(
+          width: 340,
+          height: 40,
           child: Card(
               color: Colors.white,
+              elevation: 10,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10.0),
               ),
               child: Padding(
-                  padding: EdgeInsets.only(top: 15, bottom: 15, left: 20),
-                  child: Text(
-                    '$s',
-                    textAlign: TextAlign.left,
-                  )))),
-    ));
+                  padding: EdgeInsets.only(top: 7, bottom: 5, left: 18),
+                  child: Text('$s',
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                          color: Color.fromRGBO(0, 0, 0, 0.71),
+                          fontSize: 13)))),
+        )));
   }
 
   @override
@@ -81,22 +83,22 @@ class _ProfileState extends State<Profile> {
           ),
         ),
         Padding(
-            padding: EdgeInsets.only(top: 40, bottom: 30),
+            padding: EdgeInsets.only(top: 40, bottom: 50),
             child: ClipRRect(
                 borderRadius: BorderRadius.circular(25),
                 child: Image.asset('assets/profile.jpg',
-                    height: 200, width: 200))),
+                    height: 150, width: 150))),
         Column(children: [
           text('Rider Name'),
-          SizedBox(height: 15),
+          SizedBox(height: 10),
           text('Vechile Name'),
-          SizedBox(height: 15),
+          SizedBox(height: 10),
           text('Vehicle Reg. No.'),
-          SizedBox(height: 15),
+          SizedBox(height: 10),
           text('License Number'),
-          SizedBox(height: 15),
+          SizedBox(height: 10),
           text('Phone'),
-          SizedBox(height: 15),
+          SizedBox(height: 10),
           text('Total Earnings'),
           SizedBox(height: 50),
           Row(
@@ -109,22 +111,28 @@ class _ProfileState extends State<Profile> {
                       // padding: EdgeInsets.only(left: 20, right: 20)
                       fixedSize: Size(110, 20)),
                   child: Text('Contact Us',
-                      style: TextStyle(color: Color(0xFF09AE4B)))),
+                      style: TextStyle(
+                          color: Color(0xFF09AE4B),
+                          fontWeight: FontWeight.w700))),
               ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
                       primary: Color(0xFFDDF5E2), fixedSize: Size(110, 20)),
                   child: Text('About',
-                      style: TextStyle(color: Color(0xFF09AE4B)))),
+                      style: TextStyle(
+                          color: Color(0xFF09AE4B),
+                          fontWeight: FontWeight.w700))),
               ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
                       primary: Color(0xFFDDF5E2), fixedSize: Size(110, 20)),
                   child: Text('Settings',
-                      style: TextStyle(color: Color(0xFF09AE4B)))),
+                      style: TextStyle(
+                          color: Color(0xFF09AE4B),
+                          fontWeight: FontWeight.w700))),
             ],
           ),
-          SizedBox(height: 50),
+          SizedBox(height: 30),
         ]),
       ],
     )));

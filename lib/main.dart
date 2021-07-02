@@ -3,6 +3,8 @@ import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:rider_app/order_deliver.dart';
 import 'package:rider_app/rider_home.dart';
 import 'package:rider_app/profile.dart';
+import 'package:rider_app/to_store.dart';
+import 'package:rider_app/to_user.dart';
 
 void main() {
   runApp(MyApp());
@@ -93,16 +95,14 @@ class _MyHomePageState extends State<MyHomePage> {
           },
           children: <Widget>[
             RiderHome(),
+            ToStore(),
+            ToUser(),
             OrderDeliver(),
             Profile(),
-            Container(
-              color: Colors.blue,
-            ),
           ],
         ),
       ),
       bottomNavigationBar: BottomNavyBar(
-        // showElevation: false,
         backgroundColor: Color.fromRGBO(246, 248, 255, 1),
         selectedIndex: _currentIndex,
         onItemSelected: (index) {
