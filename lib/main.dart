@@ -94,8 +94,10 @@ class _MyHomePageState extends State<MyHomePage> {
           },
           children: <Widget>[
             RiderHome(),
-            OrderDeliver(),
+            OrderNotify(),
             Profile(),
+
+          OrderDeliver(),
             Container(
               color: Colors.blue,
             ),
