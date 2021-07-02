@@ -106,6 +106,8 @@ class _MyHomePageState extends State<MyHomePage> {
       bottomNavigationBar: BottomNavyBar(
         backgroundColor: Color.fromRGBO(246, 248, 255, 1),
         selectedIndex: _currentIndex,
+        itemCornerRadius: 10,
+        showElevation: true,
         onItemSelected: (index) {
           setState(() => _currentIndex = index);
           _pageController.jumpToPage(index);
