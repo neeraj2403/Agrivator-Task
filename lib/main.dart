@@ -96,10 +96,12 @@ class _MyHomePageState extends State<MyHomePage> {
           },
           children: <Widget>[
             RiderHome(),
+            OrderNotify(),
+            Profile(),
             ToStore(),
             ToUser(),
             OrderDeliver(),
-            Profile(),
+            
           ],
         ),
       ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rider_app/circle.dart';
 import 'package:rider_app/pop_data.dart';
 import 'package:rider_app/popmenuButton.dart';
+import 'package:rider_app/to_store.dart';
 import 'package:rider_app/top_bar.dart';
 import 'package:flutter/cupertino.dart';
 // import 'package:flutter/material.dart';
@@ -162,7 +163,11 @@ class _OrderNotifyState extends State<OrderNotify> {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         FlatButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              
+                              
+                        },
+                            
                             child: Text(
                               'ACCEPT',
                               style: TextStyle(
