@@ -105,8 +105,8 @@ class _ToUserState extends State<ToUser> {
                               ClipRRect(
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(15)),
-                                  child: Image.asset('assets/store.jpg',
-                                      width: 150, height: 100)),
+                                  child: Image.asset('assets/profile.jpg',
+                                      width: 100, height: 100)),
                             ],
                           ),
                           Padding(
