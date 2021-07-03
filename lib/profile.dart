@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 class Profile extends StatefulWidget {
   const Profile({Key? key}) : super(key: key);
@@ -104,32 +105,45 @@ class _ProfileState extends State<Profile> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              ElevatedButton(
+              NeumorphicButton(
+                  style: NeumorphicStyle(
+                      color: Color(0xFFDDF5E2),
+                      depth: 4,
+                      shape: NeumorphicShape.concave,
+                      lightSource: LightSource.topLeft,
+                      // shadowLightColor: Colors.green,
+                      shadowDarkColor: Colors.green),
                   onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                      primary: Color(0xFFDDF5E2),
-                      // padding: EdgeInsets.only(left: 20, right: 20)
-                      fixedSize: Size(110, 20)),
                   child: Text('Contact Us',
                       style: TextStyle(
                           color: Color(0xFF09AE4B),
                           fontWeight: FontWeight.w700))),
-              ElevatedButton(
+              NeumorphicButton(
+                  style: NeumorphicStyle(
+                      color: Color(0xFFDDF5E2),
+                      depth: 4,
+                      shape: NeumorphicShape.concave,
+                      lightSource: LightSource.topLeft,
+                      // shadowLightColor: Colors.green,
+                      shadowDarkColor: Colors.green),
                   onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                      primary: Color(0xFFDDF5E2), fixedSize: Size(110, 20)),
                   child: Text('About',
                       style: TextStyle(
                           color: Color(0xFF09AE4B),
                           fontWeight: FontWeight.w700))),
-              ElevatedButton(
+              NeumorphicButton(
+                  style: NeumorphicStyle(
+                      color: Color(0xFFDDF5E2),
+                      depth: 4,
+                      shape: NeumorphicShape.concave,
+                      lightSource: LightSource.topLeft,
+                      // shadowLightColor: Colors.green,
+                      shadowDarkColor: Colors.green),
                   onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                      primary: Color(0xFFDDF5E2), fixedSize: Size(110, 20)),
-                  child: Text('Settings',
+                  child: Text('Setting',
                       style: TextStyle(
                           color: Color(0xFF09AE4B),
-                          fontWeight: FontWeight.w700))),
+                          fontWeight: FontWeight.w700)))
             ],
           ),
           SizedBox(height: 30),

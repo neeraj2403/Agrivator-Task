@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Rider App',
       theme: ThemeData(
-        scaffoldBackgroundColor: Color(0XFFF6F8FF),
+        scaffoldBackgroundColor: Color(0XFFFFFFFF),
+        //0XFFF6F8FF
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
@@ -101,7 +102,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ToStore(),
             ToUser(),
             OrderDeliver(),
-            
           ],
         ),
       ),
