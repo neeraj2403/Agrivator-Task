@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Rider App',
       theme: ThemeData(
-        scaffoldBackgroundColor: Color(0XFFF6F8FF),
+        scaffoldBackgroundColor: Color(0XFFFFFFFF),
+        //0XFFF6F8FF
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
@@ -101,16 +102,16 @@ class _MyHomePageState extends State<MyHomePage> {
             ToStore(),
             ToUser(),
             OrderDeliver(),
-            
           ],
         ),
       ),
+
       bottomNavigationBar: Container(
           decoration: BoxDecoration(
             boxShadow: <BoxShadow>[
               BoxShadow(
                   color: Color.fromRGBO(0, 0, 0, 0.08),
-                  blurRadius: 4.0,
+                  blurRadius: .0,
                   offset: Offset(2.0, 2.0))
             ],
           ),
