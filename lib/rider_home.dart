@@ -64,7 +64,7 @@ class _RiderHomeState extends State<RiderHome> {
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 18,
-                              fontWeight: FontWeight.bold),
+                              fontWeight: FontWeight.w600),
                         ),
                       ),
                       Padding(
@@ -74,7 +74,7 @@ class _RiderHomeState extends State<RiderHome> {
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 18,
-                              fontWeight: FontWeight.bold),
+                              fontWeight: FontWeight.w600),
                         ),
                       )
                     ],
@@ -89,7 +89,7 @@ class _RiderHomeState extends State<RiderHome> {
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
                           Person.dateof,
-                          style: TextStyle(color: Colors.black, fontSize: 15),
+                          style: TextStyle(color: Colors.black, fontSize: 15,fontWeight: FontWeight.w500),
                         ),
                       ),
                       Padding(
@@ -99,7 +99,7 @@ class _RiderHomeState extends State<RiderHome> {
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 18,
-                              fontWeight: FontWeight.bold),
+                              fontWeight: FontWeight.w500),
                         ),
                       )
                     ],

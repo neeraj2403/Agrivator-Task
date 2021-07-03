@@ -50,7 +50,7 @@ class PopMenu extends StatelessWidget {
                         Text(
                           choice.price,
                           style: TextStyle(
-                              fontSize: 12, fontWeight: FontWeight.w600),
+                              fontSize: 12, fontWeight: FontWeight.w500),
                         ),
                       ],
                     ),

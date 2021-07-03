@@ -4,6 +4,7 @@ import 'package:rider_app/circle.dart';
 import 'package:rider_app/pop_data.dart';
 import 'package:rider_app/popmenuButton.dart';
 import 'package:rider_app/to_store.dart';
+import 'package:rider_app/to_user.dart';
 import 'package:rider_app/top_bar.dart';
 import 'package:flutter/cupertino.dart';
 // import 'package:flutter/material.dart';
@@ -28,24 +29,27 @@ class _OrderNotifyState extends State<OrderNotify> {
             TopBar(),
             CircleRing(),
             Padding(
-              padding: EdgeInsets.only(left:16, right: 16,bottom: 16,top: MediaQuery.of(context).size.height/15),
+              padding: EdgeInsets.only(
+                  left: 16,
+                  right: 16,
+                  bottom: 16,
+                  top: MediaQuery.of(context).size.height / 15),
               child: Neumorphic(
-                 style: NeumorphicStyle(
-            color: Color(0xFFF6F8FF),
-            // FFF6F8FF
-            depth: 20,
-            shape: NeumorphicShape.flat,
-            border: NeumorphicBorder(
-                width: 0.3, color: Color.fromRGBO(42, 70, 112, 0.1)),
-            // intensity: 1,
-            // surfaceIntensity: 700,
-            shadowDarkColor: Color.fromRGBO(24, 50, 115, 0.50),
-            // shadowLightColor: Color.fromRGBO(24, 50, 115, 1),
-            lightSource: LightSource.topLeft,
-          ),
+                style: NeumorphicStyle(
+                  color: Color(0xFFF6F8FF),
+                  // FFF6F8FF
+                  depth: 20,
+                  shape: NeumorphicShape.flat,
+                  border: NeumorphicBorder(
+                      width: 0.3, color: Color.fromRGBO(42, 70, 112, 0.1)),
+                  // intensity: 1,
+                  // surfaceIntensity: 700,
+                  shadowDarkColor: Color.fromRGBO(24, 50, 115, 0.50),
+                  // shadowLightColor: Color.fromRGBO(24, 50, 115, 1),
+                  lightSource: LightSource.topLeft,
+                ),
                 child: Container(
-                  height: 0.5*MediaQuery.of(context).size.height,
-              
+                  height: 0.5 * MediaQuery.of(context).size.height,
                   decoration: BoxDecoration(
                     border: Border.all(
                         width: 0.5, color: Color.fromRGBO(42, 70, 112, 0.1)),
@@ -84,7 +88,8 @@ class _OrderNotifyState extends State<OrderNotify> {
                                 Text(
                                   'Store A',
                                   style: TextStyle(
-                                      fontSize: 18, fontWeight: FontWeight.bold),
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w600),
                                 ),
                                 Text(
                                   'Manarcadu Kavala',
@@ -113,8 +118,8 @@ class _OrderNotifyState extends State<OrderNotify> {
                                   child: Text('May 4 2020, 17:38'),
                                 ),
                                 Padding(
-                                  padding:
-                                      const EdgeInsets.only(top: 8.0, right: 10),
+                                  padding: const EdgeInsets.only(
+                                      top: 8.0, right: 10),
                                   child: Container(
                                       height: 70,
                                       width: 70,
@@ -132,14 +137,16 @@ class _OrderNotifyState extends State<OrderNotify> {
                       Row(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(left:20.0,right: 20,top: 18),
+                            padding: const EdgeInsets.only(
+                                left: 20.0, right: 20, top: 20),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
                                   'Bivin Varkey',
                                   style: TextStyle(
-                                      fontSize: 18, fontWeight: FontWeight.bold),
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold),
                                 ),
                                 Text(
                                   'Pampady Address, P.O., Veedu',
@@ -149,14 +156,16 @@ class _OrderNotifyState extends State<OrderNotify> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(left: 20.0, right: 20),
+                            padding: const EdgeInsets.only(
+                                left: 20.0, right: 18, top: 18),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
                                 Text(
                                   '₹150',
                                   style: TextStyle(
-                                      fontSize: 18, fontWeight: FontWeight.bold),
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold),
                                 ),
                                 Text(
                                   '2km',
@@ -169,32 +178,31 @@ class _OrderNotifyState extends State<OrderNotify> {
                       ),
                       PopMenu(),
                       Padding(
-                    padding: EdgeInsets.only(top:MediaQuery.of(context).size.width/20),
-              
+                        padding: EdgeInsets.only(
+                            top: MediaQuery.of(context).size.width / 20),
                         child: Center(
                             child: Text(
                           'ESTIMATED TRAVEL: 28 MINS',
-                          style:
-                              TextStyle(fontSize: 15, fontWeight: FontWeight.w300),
+                          style: TextStyle(
+                              fontSize: 15, fontWeight: FontWeight.w300),
                         )),
                       ),
                       Row(
                         // crossAxisAlignment: CrossAxisAlignment.end,
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          FlatButton(
+                          TextButton(
                               onPressed: () {
-                                
-                                
-                          },
-                              
+                                Navigator.pushReplacementNamed(
+                                    context, '/Store');
+                              },
                               child: Text(
                                 'ACCEPT',
                                 style: TextStyle(
                                     fontSize: 18,
                                     color: Color.fromRGBO(38, 183, 96, 1)),
                               )),
-                          FlatButton(
+                          TextButton(
                               onPressed: () {},
                               child: Text(
                                 'REJECT',

@@ -66,38 +66,27 @@ class _ProfileState extends State<Profile> {
         child: Container(
             child: Column(
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Container(
-              margin: EdgeInsets.only(top: 35, left: 5),
-              child: Row(
-                children: [
-                  IconButton(
-                    icon: Icon(
-                      Icons.arrow_back_rounded,
-                    ),
-                    onPressed: () {},
-                  ),
-                  Text(
-                    'My Profile',
-                    style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.black,
-                        fontWeight: FontWeight.w600),
-                  )
-                ],
+        Padding(
+          padding: const EdgeInsets.only(top: 45, right: 25.0, left: 30),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                child: Text(
+                  'My Profile',
+                  style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w600),
+                ),
               ),
-            ),
-             Padding(
-            padding: const EdgeInsets.only(top: 35,right:25.0),
-            child: Container(
-                height: 20,
-                width: 20,
-                decoration: BoxDecoration(),
-                child: Image.asset('assets/Logo.png')),
+              Container(
+                  height: 20,
+                  width: 20,
+                  decoration: BoxDecoration(),
+                  child: Image.asset('assets/Logo.png')),
+            ],
           ),
-          ],
         ),
         Padding(
             padding: EdgeInsets.only(top: 40, bottom: 50),
