@@ -27,7 +27,7 @@ class _OrderNotifyState extends State<OrderNotify> {
             TopBar(),
             CircleRing(),
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: EdgeInsets.only(left: 16,right: 16,top: MediaQuery.of(context).size.height/30,bottom: 16),
               child: Container(
                 height: 0.45*MediaQuery.of(context).size.height,
 
