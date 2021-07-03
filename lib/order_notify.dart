@@ -163,11 +163,7 @@ class _OrderNotifyState extends State<OrderNotify> {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         FlatButton(
-                            onPressed: () {
-                              
-                              
-                        },
-                            
+                            onPressed: () {},
                             child: Text(
                               'ACCEPT',
                               style: TextStyle(

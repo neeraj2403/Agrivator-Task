@@ -70,7 +70,8 @@ class PopMenu extends StatelessWidget {
                 style: TextStyle(
                     fontSize: MediaQuery.of(context).size.height / 60,
                     // letterSpacing: 1.8,
-                    color: Colors.green),
+                    color: Colors.green,
+                    fontWeight: FontWeight.w600),
               ),
             ),
           ),

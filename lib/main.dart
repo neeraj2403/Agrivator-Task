@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Rider App',
       theme: ThemeData(
-        scaffoldBackgroundColor: Color(0XFFFFFFFF),
+        scaffoldBackgroundColor: Color(0XFFF6F8FF),
         //0XFFF6F8FF
         // This is the theme of your application.
         //
