@@ -38,7 +38,8 @@ class _ProfileState extends State<Profile> {
           )
         ]),
         child: SizedBox(
-          width: 340,
+        width: 7.5 * (MediaQuery.of(context).size.width / 10),
+        
           height: 40,
           child: Card(
               color: Colors.white,
@@ -109,7 +110,8 @@ class _ProfileState extends State<Profile> {
                   style: ElevatedButton.styleFrom(
                       primary: Color(0xFFDDF5E2),
                       // padding: EdgeInsets.only(left: 20, right: 20)
-                      fixedSize: Size(110, 20)),
+                      fixedSize: Size(110, 20)
+                      ),
                   child: Text('Contact Us',
                       style: TextStyle(
                           color: Color(0xFF09AE4B),
