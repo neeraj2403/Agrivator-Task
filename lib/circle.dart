@@ -15,7 +15,7 @@ class CircleRing extends StatelessWidget {
             //Color.fromRGBO(46, 185, 102, 0.5),
             // shadowDarkColorEmboss: Color.fromRGBO(0, 0, 0, 1),
             // shadowLightColorEmboss: Color.fromRGBO(0, 0, 0, 1),
-            depth: 2,
+            depth: 5,
             // border: NeumorphicBorder(width: 0.1),
             shape: NeumorphicShape.concave),
         child: Center(
