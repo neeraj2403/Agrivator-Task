@@ -29,7 +29,8 @@ class _OrderNotifyState extends State<OrderNotify> {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Container(
-                height: 300,
+                height: 0.45*MediaQuery.of(context).size.height,
+
                 decoration: BoxDecoration(
                   border: Border.all(
                       width: 0.5, color: Color.fromRGBO(42, 70, 112, 0.1)),
@@ -152,12 +153,16 @@ class _OrderNotifyState extends State<OrderNotify> {
                       ],
                     ),
                     PopMenu(),
-                    Center(
-                        child: Text(
-                      'ESTIMATED TRAVEL: 28 MINS',
-                      style:
-                          TextStyle(fontSize: 15, fontWeight: FontWeight.w300),
-                    )),
+                    Padding(
+                  padding: EdgeInsets.only(top:MediaQuery.of(context).size.width/20),
+
+                      child: Center(
+                          child: Text(
+                        'ESTIMATED TRAVEL: 28 MINS',
+                        style:
+                            TextStyle(fontSize: 15, fontWeight: FontWeight.w300),
+                      )),
+                    ),
                     Row(
                       // crossAxisAlignment: CrossAxisAlignment.end,
                       mainAxisAlignment: MainAxisAlignment.end,
