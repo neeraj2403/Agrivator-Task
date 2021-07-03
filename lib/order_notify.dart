@@ -27,7 +27,7 @@ class _OrderNotifyState extends State<OrderNotify> {
             TopBar(),
             CircleRing(),
             Padding(
-              padding: EdgeInsets.only(left: 16,right: 16,top: MediaQuery.of(context).size.height/30,bottom: 16),
+              padding: const EdgeInsets.all(16.0),
               child: Container(
                 height: 0.45*MediaQuery.of(context).size.height,
 
@@ -168,7 +168,11 @@ class _OrderNotifyState extends State<OrderNotify> {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         FlatButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              
+                              
+                        },
+                            
                             child: Text(
                               'ACCEPT',
                               style: TextStyle(
