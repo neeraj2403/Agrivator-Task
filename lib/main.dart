@@ -103,12 +103,13 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+
       bottomNavigationBar: Container(
           decoration: BoxDecoration(
             boxShadow: <BoxShadow>[
               BoxShadow(
                   color: Color.fromRGBO(0, 0, 0, 0.08),
-                  blurRadius: 4.0,
+                  blurRadius: .0,
                   offset: Offset(2.0, 2.0))
             ],
           ),
