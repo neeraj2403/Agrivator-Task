@@ -17,8 +17,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Rider App',
+      
       theme: ThemeData(
         scaffoldBackgroundColor: Color(0XFFF6F8FF),
+        fontFamily: 'Reem Kufi',
         //0XFFF6F8FF
         // This is the theme of your application.
         //
