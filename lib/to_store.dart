@@ -18,9 +18,9 @@ class _ToStoreState extends State<ToStore> {
             child: Column(children: [
       TopBar(),
       SizedBox(
-        height: 300,
+        height: 250,
         child: Padding(
-            padding: EdgeInsets.only(top: 150), child: Text('Map here')),
+            padding: EdgeInsets.only(top: 100), child: Text('Map here')),
       ),
       Neumorphic(
           style: NeumorphicStyle(
@@ -38,7 +38,8 @@ class _ToStoreState extends State<ToStore> {
           ),
           margin: const EdgeInsets.all(16.0),
           child: Container(
-            height: 300,
+            height: 0.4 * MediaQuery.of(context).size.height,
+
             // decoration: BoxDecoration(
             //   border: Border.all(
             //       width: 0.5, color: Color.fromRGBO(42, 70, 112, 0.1)),
