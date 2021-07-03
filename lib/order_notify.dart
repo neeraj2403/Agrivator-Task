@@ -28,7 +28,7 @@ class _OrderNotifyState extends State<OrderNotify> {
             TopBar(),
             CircleRing(),
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: EdgeInsets.only(left:16, right: 16,bottom: 16,top: MediaQuery.of(context).size.height/15),
               child: Neumorphic(
                  style: NeumorphicStyle(
             color: Color(0xFFF6F8FF),
@@ -44,7 +44,7 @@ class _OrderNotifyState extends State<OrderNotify> {
             lightSource: LightSource.topLeft,
           ),
                 child: Container(
-                  height: 0.45*MediaQuery.of(context).size.height,
+                  height: 0.5*MediaQuery.of(context).size.height,
               
                   decoration: BoxDecoration(
                     border: Border.all(
@@ -132,7 +132,7 @@ class _OrderNotifyState extends State<OrderNotify> {
                       Row(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(left: 20.0, right: 20),
+                            padding: const EdgeInsets.only(left:20.0,right: 20,top: 18),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [

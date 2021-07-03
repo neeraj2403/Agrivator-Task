@@ -65,13 +65,19 @@ class PopMenu extends StatelessWidget {
           child: Container(
             width: 2.25 * (MediaQuery.of(context).size.width / 10),
             child: Center(
-              child: Text(
-                'Items',
-                style: TextStyle(
-                    fontSize: MediaQuery.of(context).size.height / 60,
-                    // letterSpacing: 1.8,
-                    color: Colors.green,
-                    fontWeight: FontWeight.w600),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                    'Items',
+                    style: TextStyle(
+                        fontSize: MediaQuery.of(context).size.height / 50,
+                        // letterSpacing: 1.8,
+                        color: Colors.green),
+                  ),
+                  Icon(Icons.arrow_drop_down,size: 20,color: Colors.green,)
+                ],
               ),
             ),
           ),
